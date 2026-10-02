@@ -1,0 +1,6 @@
+{
+  "name": "Eye Test",
+  "description": "Comprehensive vision testing app featuring interactive Snellen chart, Tumbling E, Ishihara color blindness tests, astigmatism dial, and 20-20-20 eye strain tracker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

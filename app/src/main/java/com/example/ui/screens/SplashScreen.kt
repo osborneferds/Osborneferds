@@ -28,6 +28,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Business
 import androidx.compose.material.icons.filled.CheckCircle
+import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.VerifiedUser
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
@@ -243,6 +244,24 @@ fun SplashScreen(
                     fontSize = 11.sp,
                     fontWeight = FontWeight.SemiBold,
                     color = Color(0xFF94A3B8)
+                )
+            }
+            Spacer(modifier = Modifier.height(2.dp))
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(5.dp)
+            ) {
+                Icon(
+                    imageVector = Icons.Default.Code,
+                    contentDescription = null,
+                    tint = Color(0xFF00B4D8),
+                    modifier = Modifier.size(13.dp)
+                )
+                Text(
+                    text = "Developed by Osborneferds",
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Medium,
+                    color = Color(0xFF00B4D8)
                 )
             }
             Spacer(modifier = Modifier.height(4.dp))

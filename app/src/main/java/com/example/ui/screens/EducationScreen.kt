@@ -14,8 +14,10 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.HelpOutline
 import androidx.compose.material.icons.filled.LocalHospital
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.Card
@@ -141,6 +143,42 @@ fun EducationScreen(
                         "• Adults 18-64: Comprehensive exam at least every 2 years (annually for contact lens wearers or diabetics).\n" +
                         "• Adults 65+: Comprehensive exam annually to screen for glaucoma, macular degeneration, and cataracts."
             )
+        }
+
+        item {
+            Card(
+                shape = RoundedCornerShape(16.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.6f)),
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            imageVector = Icons.Default.Code,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.primary
+                        )
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Text(
+                            text = "Developer & Architecture",
+                            style = MaterialTheme.typography.titleSmall,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.primary
+                        )
+                    }
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(
+                        text = "• Lead Developer: Osborneferds\n" +
+                                "• Application: Eye Test — Clinical Vision Screening Suite\n" +
+                                "• Organization: Oculus Vision Labs / VisionCare Optics\n" +
+                                "• Framework: Kotlin & Jetpack Compose (Material 3)\n" +
+                                "• Standards: Snellen Imperial/Metric, Ishihara 38 Plates, Lancaster-Regan Meridians",
+                        style = MaterialTheme.typography.bodySmall,
+                        lineHeight = 20.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
         }
 
         item {

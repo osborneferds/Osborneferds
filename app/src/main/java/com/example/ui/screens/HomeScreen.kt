@@ -255,6 +255,26 @@ fun HomeScreen(
         item {
             MedicalDisclaimerBanner()
         }
+
+        item {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 12.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = "Eye Test v1.0 • Developed by Osborneferds",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.75f)
+                )
+                Text(
+                    text = "Oculus Vision Labs • VisionCare Optics & Health Sciences",
+                    style = MaterialTheme.typography.labelSmall.copy(fontSize = 10.sp),
+                    color = MaterialTheme.colorScheme.outline
+                )
+            }
+        }
     }
 }
 

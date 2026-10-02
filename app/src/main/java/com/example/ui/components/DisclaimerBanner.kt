@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -31,6 +32,7 @@ fun MedicalDisclaimerBanner(
             .clip(RoundedCornerShape(12.dp))
             .background(MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.6f))
             .padding(12.dp)
+            .testTag("medical_disclaimer_banner")
     ) {
         Row(
             verticalAlignment = Alignment.CenterVertically
